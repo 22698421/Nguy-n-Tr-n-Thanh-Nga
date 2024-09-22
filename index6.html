@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item1 {grid-area: header;}
+        .item2 {grid-area: menu; }
+        .item3 {grid-area: gettingstarted;}
+        .item4 {grid-area: PreservingYourMemories;}
+        .item5 {grid-area: content;}
+        .item6 {grid-area: footer;}
+        .item7 {grid-area: box;} 
+            
+        #grid-container{
+            display: grid;
+            grid-template-areas: 
+            'header header header header header'
+            'menu gettingstarted gettingstarted gettingstarted gettingstarted '
+            'menu PreservingYourMemories PreservingYourMemories box box'
+            'menu content content content content'
+            'menu footer footer footer footer'
+            ;
+        }
+        h3{
+            margin: 0;
+        }
+        p{
+            margin: 4px;
+            display: inline-block;
+        }
+        span{
+            background-color: bisque;
+            height: 200px;
+            width: 200px;
+            border: 10px solid light burlywood;
+        } 
+
+       
+        
+    </style>
+</head>
+<body>
+  
+    <div id="grid-container">
+        <div class="item1">
+            <img src="header.PNG" alt="">
+        </div>
+        <div class="item2">
+            <img src="menu.PNG" alt="">
+        </div>
+        <div class="item3">
+            <h3>Getting Started</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias perspiciatis consequuntur sit in sunt, nam, asperiores quam, soluta suscipit accusantium assumenda repellendus ut temporibus labore voluptatibus odit fuga dignissimos ad.</p>
+
+        </div>
+        <div class="item4">
+            <h3>Preserving Your Memories</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil placeat provident dolores molestiae consequuntur veritatis? Libero officiis ipsum, sequi excepturi dolorum deleniti fugiat quisquam alias accusantium corporis minus nemo esse tenetur, voluptas, commodi ea! Soluta at fugit fugiat doloribus aut nesciunt, officia, aliquid eos repellendus, modi porro cumque sunt est?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illo non provident possimus inventore id quisquam, sint corporis debitis minima voluptatum exercitationem? Delectus deserunt velit, rem quo doloribus earum voluptas.</p>
+        </div>
+
+        <div class="item7">hello </div>
+
+
+        <div class="item5">footer</div>
+
+        
+
+    </div>
+
+
+
+
+
+</body>
+</html>
